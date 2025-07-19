@@ -1,39 +1,43 @@
 import { Header } from "@/components/landing/Header"
-import { Hero } from "@/components/landing/Hero"
-import { About } from "@/components/landing/About"
-import { Eligibility } from "@/components/landing/Eligibility"
-import { ExamPattern } from "@/components/landing/ExamPattern"
-import { CourseHighlights } from "@/components/landing/CourseHighlights"
-import { Fees } from "@/components/landing/Fees"
-import { FAQ } from "@/components/landing/FAQ"
-import { CTA } from "@/components/landing/CTA"
+import { RBIHero } from "@/components/landing/RBIHero"
+import { RBIAbout } from "@/components/landing/RBIAbout"
+import { RBIWhy } from "@/components/landing/RBIWhy"
+import { RBIEligibility } from "@/components/landing/RBIEligibility"
+import { RBIExamPattern } from "@/components/landing/RBIExamPattern"
+import { RBICourseHighlights } from "@/components/landing/RBICourseHighlights"
+import { RBIFees } from "@/components/landing/RBIFees"
+import { RBIFAQ } from "@/components/landing/RBIFAQ"
+import { RBICTA } from "@/components/landing/RBICTA"
 import { Footer } from "@/components/landing/Footer"
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-poppins">
       <Header />
       <main>
-        <Hero />
+        <RBIHero />
         <section id="about">
-          <About />
+          <RBIAbout />
+        </section>
+        <section id="why-choose">
+          <RBIWhy />
         </section>
         <section id="eligibility">
-          <Eligibility />
+          <RBIEligibility />
         </section>
         <section id="exam-pattern">
-          <ExamPattern />
+          <RBIExamPattern />
         </section>
         <section id="course">
-          <CourseHighlights />
+          <RBICourseHighlights />
         </section>
         <section id="fees">
-          <Fees />
+          <RBIFees />
         </section>
         <section id="faq">
-          <FAQ />
+          <RBIFAQ />
         </section>
-        <CTA />
+        <RBICTA />
       </main>
       <Footer />
     </div>
